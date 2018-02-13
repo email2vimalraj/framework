@@ -7,7 +7,16 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class DriverFactory {
+
+    /**
+     * Creates the remote web driver instance with the local browser name
+     * @param browserName The local browser name, refer {@link Browser} enum for the list of browsers
+     * @return The instance of the {@link RemoteWebDriver}
+     */
     public static RemoteWebDriver createInstance(String browserName) {
         RemoteWebDriver driver = null;
 
@@ -33,4 +42,15 @@ public class DriverFactory {
         }
         return driver;
     }
+
+//    public static RemoteWebDriver createInstance(String url, String capFilePath) {
+//        RemoteWebDriver driver = null;
+//
+//        try {
+//            URL remoteUrl = new URL(url);
+//
+//        } catch (MalformedURLException e) {
+//            e.printStackTrace();
+//        }
+//    }
 }
