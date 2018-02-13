@@ -1,5 +1,6 @@
 package com.altimetrik.internals;
 
+import com.altimetrik.elements.Element;
 import org.openqa.selenium.WebElement;
 
 public interface ElementFactory {

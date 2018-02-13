@@ -1,5 +1,6 @@
 package com.altimetrik.internals;
 
+import com.altimetrik.elements.Element;
 import org.openqa.selenium.WebElement;
 
 import java.lang.reflect.InvocationTargetException;
@@ -11,13 +12,13 @@ public class CustomElementFactory implements ElementFactory {
         try {
             element = findImplementingClass(clazz)
                         .getDeclaredConstructor(WebElement.class)
-                        .newInstance(wrappedElement);
+                        .newInstance(wrappedElement);w
         } catch (IllegalAccessException | InstantiationException | NoSuchMethodException | InvocationTargetException e) {
             throw new RuntimeException(e);
         }
         return element;
     }
-
+w
     private <E extends Element> Class<? extends E> findImplementingClass(final Class<E> elementClass) {
         String pack = elementClass.getPackage().getName();
         String className = elementClass.getSimpleName();

@@ -1,4 +1,4 @@
-package com.altimetrik.internals;
+package com.altimetrik.elements;
 
 import org.openqa.selenium.WebElement;
 

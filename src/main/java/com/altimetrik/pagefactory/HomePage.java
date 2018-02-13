@@ -1,7 +1,7 @@
 package com.altimetrik.pagefactory;
 
 import com.altimetrik.internals.CustomFieldDecorator;
-import com.altimetrik.internals.Label;
+import com.altimetrik.elements.Label;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
